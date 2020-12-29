@@ -5,6 +5,7 @@
     let phase4done = 0;
     let phase5done = 0;
     let totaldone = 25;
+    let refresh = 1;
 </script>
 <!DOCTYPE html>
 <html>
@@ -309,7 +310,7 @@ setInterval(function() {
     document.getElementById("p1y").innerHTML = phase1todo;document.getElementById("p2y").innerHTML = phase2todo;document.getElementById("p3y").innerHTML = phase3todo;document.getElementById("p4y").innerHTML = phase4todo;document.getElementById("p5y").innerHTML = phase5todo;document.getElementById("ty").innerHTML = totaltodo;
     document.getElementById("p1x").innerHTML = phase1done;document.getElementById("p2x").innerHTML = phase2done;document.getElementById("p3x").innerHTML = phase3done;document.getElementById("p4x").innerHTML = phase4done;document.getElementById("p5x").innerHTML = phase5done;document.getElementById("tx").innerHTML = totaldone;
     document.getElementById("days").innerHTML = daysLeft;document.getElementById("hours").innerHTML = hoursLeft;document.getElementById("mins").innerHTML = minsLeft;document.getElementById("secs").innerHTML = secsLeft;
-}, 200);
+}, (refresh * 1000));
 
 </script>
 </body>
